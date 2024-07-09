@@ -37,6 +37,6 @@ public class CardDeliveryTest {
         $(".button").click();
         $(".notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.text("Встреча  забронирована на " + date));
+                .shouldHave(Condition.text("Встреча успешно забронирована на " + date));
     }
 }
